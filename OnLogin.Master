@@ -1,0 +1,57 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="OnLogin.Master.cs" Inherits="Final_Book_Exchange.Site1" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    
+    <link href="Content/bootstrap.min.css" rel="stylesheet" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server" style="background-color:blanchedalmond">
+         <!-- nav bar code -->
+        
+        <nav class="navbar navbar-expand-lg" style="background-color: rgb(235, 82, 62)">
+            <div class="container text-white">
+                <a class="navbar-brand text-white" href="#">Book Exchange</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse text-white" id="navbarNavAltMarkup">
+                    <div class="navbar-nav " >
+                        <a class="nav-link text-white" href="OnHome.aspx"> Home</a>
+                        <a class="nav-link text-white" href="OnAddNewBook.aspx">Add Books</a>
+                        <a class="nav-link text-white" href="Search.aspx">Search Book</a>
+                        <a class="nav-link text-white" href="OnContactus.aspx">Contact Us</a>
+                        <a class="nav-link text-white" href="Logout.aspx">Sign Out</a>
+                        
+                    </div>
+                </div>
+            </div>
+            <p style="color:HighlightText">
+            <asp:Label ID="UID_label" runat="server" Font-Italic  > </asp:Label>
+                <asp:Label ID="uname" runat="server" Font-Italic  > </asp:Label>
+            </p>
+        </nav>
+
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+
+        <br /> <br />
+        <div class="container-fluid" style="background-color:rgb(212, 166, 91)"> 
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h6>All Right is Reserved By Programming Passion @2021</h6>
+                </div>
+            </div>
+
+        </div>
+    </form>
+    <script src="Scripts/bootstrap.min.js"></script>
+    <script src="Scripts/popper.min.js"></script>
+</body>
+</html>
